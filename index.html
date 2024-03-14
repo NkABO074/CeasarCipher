@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Ceasar Cipher</title>
+		<link rel="stylesheet" href="static/styles/style.css">
+	</head>
+	<body>
+
+		<!--Header-->
+		<header class="TopHead">
+			<h1>Ceasar Encryption</h1>
+		</header>
+		<!---->
+
+		
+		<div class="page_holder">
+
+			
+			<!--Input for the message to cipher-->
+			<div class="msg_containner">
+			<label for="Message-screen">Message to cipher: </label>
+			<textarea id="Message-screen" class="message" name="myTextarea" rows="4" cols="50">
+				This is some default text in the textarea.
+			</textarea>
+			</div>
+			<!---->
+
+			<!--Input Insertion of (K) the key-->
+			<div class="K_containner">
+			<label for="Decalage-screen">(Cipher Key)Decalage: </label>
+			<input type="number" name="" id="Decalage-screen" class="cipherStep">
+			</div>
+			<!---->
+
+			<!--The Ciphered message-->
+			<div class="cipher_containner">
+			<label for="ComputedCipher-screen"> Result: </label>
+			<textarea id="ComputedCipher-screen" class="comCipher" name="myTextarea" rows="4" cols="50" readonly>
+			</textarea>
+			</div>
+			<!---->
+			
+			<!--button-->
+			<div class="button_containner">
+				<button id="sendToCipher">Cipher</button>
+				<button id="sendToDecipher">Decipher</button>
+			</div>
+			<!---->
+
+		</div>
+		
+		<script src="static/scripts/main.js" async defer></script>
+	</body>
+</html>

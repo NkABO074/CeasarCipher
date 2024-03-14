@@ -1,0 +1,71 @@
+body {
+	font-size: 1rem;
+}
+
+.TopHead {
+	font-size: 4vw; /* Using vw for responsive font size */
+	background-color: brown;
+	width: 100%;
+	overflow: hidden;
+}
+
+.TopHead h1 {
+	color: antiquewhite;
+	margin: 10px;
+}
+
+.page_holder {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	border: 1px dotted #000000;
+	padding: 2vw; /* Using vw for responsive padding */
+	align-items: stretch;
+}
+
+.msg_containner,
+.cipher_containner {
+	display: flex;
+	flex-direction: column;
+}
+
+.msg_containner label,
+.cipher_containner label {
+	padding: 1vw; /* Using vw for responsive padding */
+}
+
+.K_containner {
+	margin: 2vw; /* Using vw for responsive margin */
+	margin-top: 3vw; /* Using vw for responsive margin */
+}
+
+.K_containner input {
+	width: 10vw; /* Using vw for responsive input width */
+}
+
+.button_containner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+.button_containner button {
+	font-size: 2vw; /* Using vw for responsive font size */
+	margin: 1vw; /* Using vw for responsive margin */
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+	.TopHead {
+		font-size: 8vw; /* Adjust as needed */
+	}
+
+	.page_holder {
+		padding: 4vw; /* Adjust as needed */
+	}
+
+	.button_containner button {
+		font-size: 3vw; /* Adjust as needed */
+	}
+}
